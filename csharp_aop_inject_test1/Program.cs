@@ -57,7 +57,7 @@ namespace csharp_aop_inject_test
                 string suffixName = fileName.Substring(pointIndex, fileName.Length - pointIndex);
                 string newFilePath = Path.Combine(fileInfo.Directory.FullName, prefixName + "_inject" + suffixName);
                 assemblyDefinition.Write(newFilePath);
-                Console.WriteLine($"Aop success, output path: {newFilePath}");
+                Console.WriteLine($"IL inject success, output path: {newFilePath}");
                 fileStream.Dispose();
             }
         }
