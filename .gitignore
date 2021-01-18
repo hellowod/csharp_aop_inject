@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/.vs
+/bin
+/csharp_aop_inject/obj
+/csharp_aop_inject_test1/obj
+/csharp_aop_inject_test2/obj
+/packages
