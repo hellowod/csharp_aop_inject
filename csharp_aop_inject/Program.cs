@@ -9,13 +9,13 @@ namespace csharp_aop_inject
             Console.WriteLine("hello world1");
 
             Program p = new Program();
-            p.add(10, 10);
-            p.sub(10, 100);
+            p.Add(10, 10);
+            p.Sub(10, 100);
 
             Console.WriteLine("hello world2");
         }
 
-        public int add(int v1, int v2)
+        public int Add(int v1, int v2)
         {
             int r = 0;
             for (int i = 0; i < 100000; i++) {
@@ -24,7 +24,7 @@ namespace csharp_aop_inject
             return r;
         }
 
-        public int sub(int v1, int v2)
+        public int Sub(int v1, int v2)
         {
             int r = 0;
             for (int i = 0; i < 1000010; i++) {

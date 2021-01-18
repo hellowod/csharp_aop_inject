@@ -24,7 +24,7 @@ namespace csharp_aop_inject_test2
                 Collection<TypeDefinition> typeDefinition = moduleDefinition.Types;
                 foreach (TypeDefinition type in typeDefinition) {
                     foreach (MethodDefinition method in type.Methods) {
-                        if (method.Name.Equals("Main")) {
+                        if (method.Name.Equals("Add") || method.Name.Equals("Sub")) {
                             Instruction instruction = method.Body.Instructions[0];
                             ILProcessor iLProcessor = method.Body.GetILProcessor();
                             iLProcessor.InsertBefore(instruction, iLProcessor.Create(OpCodes.Ldstr, "Method start..."));
