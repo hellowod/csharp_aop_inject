@@ -7,8 +7,7 @@
 该工程是用来IL注入的工程csharp_aop_inject。
 
 核心代码：
-```
-
+```csharp
 using System;
 
 namespace csharp_aop_inject
@@ -55,7 +54,7 @@ namespace csharp_aop_inject
 使用方法为：csharp_aop_inject_test1.exe ./csharp_aop_inject.exe。
 
 核心代码：
-```
+```csharp
 using Mono.Cecil;
 using Mono.Cecil.Cil;
 using Mono.Collections.Generic;
@@ -129,7 +128,7 @@ namespace csharp_aop_inject_test
 使用方法为：csharp_aop_inject_test2.exe ./csharp_aop_inject.exe。
 
 核心代码：
-```
+```csharp
 using Mono.Cecil;
 using Mono.Cecil.Cil;
 using Mono.Collections.Generic;
